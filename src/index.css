@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(247, 247, 247, 0.8), rgba(238, 238, 238, 0.8)), url(../public/img/palm-leaf.png);
+  background-size: contain;
+  font-family: "Lato", sans-serif; }
+
+.card {
+  background-color: #3c5aa6;
+  margin: 2rem;
+  border-radius: 1rem;
+  flex: 0 0 20%;
+  text-decoration: none;
+  transition: all 0.2s; }
+  .card__title {
+    color: #ebebeb;
+    font-size: 4rem;
+    font-family: "Miltonian Tattoo";
+    text-transform: capitalize; }
+  .card__img {
+    height: 25rem;
+    width: 25rem; }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(14, 17, 17, 0.6);
+    cursor: pointer; }
+  .card:active, .card:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35); }
+
+    .pokeCard {
+      background-color: #ebebeb;
+      padding: 5rem;
+      width: 75rem;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1rem solid #ffcb05;
+      border-radius: 3rem;
+      margin-top: 10rem; }
+      .pokeCard__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+      .pokeCard__name {
+        text-transform: capitalize;
+        font-size: 3rem;
+        text-align: start;
+        flex: 0 0 28%; }
+      .pokeCard__basics {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0;
+        font-size: 1.15rem;
+        text-transform: capitalize; }
+      .pokeCard__item {
+        margin-left: 0.3rem;
+        font-size: 1.5rem; }
+      .pokeCard__stats {
+        background-color: #f7f7f7;
+        border: 2px solid #999;
+        color: #999;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 2.5rem; }
+      .pokeCard__Title {
+        margin-top: 2rem;
+      }
+      .pokeCard__abilities {
+        list-style: none;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin: 1rem;
+        text-align: start; }
+      .pokeCard__ability {
+        padding: 2rem; }
+      .pokeCard__typeDiv {
+        display: flex;
+        align-items: center; }
+      .pokeCard__types {
+        list-style: none;
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin: 1rem;
+        display: flex;
+        justify-content: flex-end; }
+      .pokeCard__type {
+        padding: 2rem; }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f7f7;
+  box-shadow: 0 0.5rem 1rem rgba(14, 17, 17, 0.35);
+  height: 8rem; }
+  .nav__link {
+    text-decoration: none;
+    font-family: "Miltonian Tattoo";
+    color: #3c5aa6;
+    font-size: 4rem; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 90vh;
+  margin-bottom: 8rem; }
+
+.type__input {
+  display: inline-flex;
+  margin: 1em;
+}
